@@ -34,6 +34,7 @@ header {
   height: 70px;
   padding: 20px 20px;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .top-header.scrolled {
@@ -41,6 +42,7 @@ header {
   transition: background-color 200ms linear;
   color: black;
   box-shadow: 0.5px 2px 2px 0.5px rgba(12, 12, 12, 0.2);
+  overflow: hidden;
 }
 
 .top-header .company-name {
