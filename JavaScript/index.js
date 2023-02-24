@@ -184,3 +184,4 @@ window.addEventListener('scroll', () => {
   handleScrollAnimation1();
 });
 
+
