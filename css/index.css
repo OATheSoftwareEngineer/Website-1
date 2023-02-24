@@ -315,7 +315,7 @@ header {
 
 .js-scroll1 {
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   filter: blur(4px);
   transform: translateY(150%);
   padding-top: 80px;
@@ -428,6 +428,7 @@ header {
   filter: blur(4px);
   transform: translate(100%);
   -webkit-filter: blur(4px);
+  will-change: transform;
 }
 
 .js-scroll2:nth-child(2) {
@@ -527,6 +528,7 @@ header {
   filter: blur(4px);
   transform: translateY(150%);
   padding-top: 80px;
+  will-change: transform;
 }
 
 .js-scroll3.scrolled3 {
@@ -625,6 +627,7 @@ header {
   transition: all 1s ease;
   filter: blur(4px);
   transform: translateX(100%);
+  will-change: transform;
 }
 
 .js-scroll4.scrolled4 {

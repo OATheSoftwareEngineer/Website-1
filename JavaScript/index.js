@@ -30,6 +30,7 @@ function sideNav() {
         closeAside[c].addEventListener('click', function () {
            aside.classList.remove("show-aside");
         });
+    }
 
     for (let y = 0; y < asideLinks.length; y++) {
         asideLinks[y].addEventListener('click', function () {
@@ -147,7 +148,7 @@ const hideScrollElement4 = (element) => {
 const handleScrollAnimation1 = () => {
 
   scrollElement1.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 1)) {
       displayScrollElement1(el);
     } else if (elementOutView(el)) {
       hideScrollElement1(el);
@@ -155,7 +156,7 @@ const handleScrollAnimation1 = () => {
   });
 
   scrollElement2.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 1)) {
       displayScrollElement2(el);
     } else if (elementOutView(el)) {
       hideScrollElement2(el);
@@ -163,7 +164,7 @@ const handleScrollAnimation1 = () => {
   });
 
   scrollElement3.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 1)) {
       displayScrollElement3(el);
     } else if (elementOutView(el)) {
       hideScrollElement3(el);
@@ -171,7 +172,7 @@ const handleScrollAnimation1 = () => {
   });
 
   scrollElement4.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 1)) {
       displayScrollElement4(el);
     } else if (elementOutView(el)) {
       hideScrollElement4(el);
