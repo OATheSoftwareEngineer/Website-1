@@ -1,25 +1,25 @@
 <?php
-session_cache_limiter( 'nocache' );
-$subject = $_REQUEST['You have received a mail']; // Subject of your email
-$to = "osborneosas12@gmail.com";  //Recipient's E-mail
-$from = "['email']"; //Recipient's E-mail
+// Get data from form
+$name = $_POST['name'];
+$email= $_POST['email'];
+$message= $_POST['message'];
 
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= "From: " . $_REQUEST['name'].'<'.$_REQUEST['email'] .'>'. "\r\n"; 
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$to = "osborneosas12@gmail.com";
+$subject = "This is the subject line";
 
-$message  = 'Name: ' . $_REQUEST['name'] . "<br>";
-$message .= $_REQUEST['message'];
+// The following text will be sent
+// Name = user entered name
+// Email = user entered email
+// Message = user entered message
+$txt ="Name = ". $name . "\r\n Email = "
+	. $email . "\r\n Message =" . $message;
 
-if (@mail($to, $subject, $message, $headers))
-{
-	// Transfer the value 'sent' to ajax function for showing success message.
-	echo 'sent';
-	//header('Location: ./contact.html');
+$headers = "From: noreply@choplessglobalplaza.com" . "\r\n" .
+			"CC: osborneoas12@gmail.com";
+if($email != NULL) {
+	mail($to, $subject, $txt, $headers);
 }
-else
-{
-	// Transfer the value 'failed' to ajax function for showing error message.
-	echo 'failed';
-}
+
+// Redirect to
+header("Location:index.html");
 ?>
