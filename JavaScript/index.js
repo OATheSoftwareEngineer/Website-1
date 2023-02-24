@@ -13,7 +13,7 @@ $(function () {
 
 /* Aside Bar */
 
-const openAside = document.querySelector(".fa-bars");
+const openAside = document.querySelector(".fa-bars-staggered");
 const closeAside = document.querySelector(".close-aside");
 const aside = document.querySelector('.aside');
 const asideLinks = document.querySelectorAll('.aside-links');
