@@ -13,20 +13,23 @@ $(function () {
 
 /* Aside Bar */
 
-const openAside = document.querySelector(".fa-bars-staggered");
-const closeAside = document.querySelector(".close-aside");
+const openAside = document.querySelectorAll(".fa-bars-staggered");
+const closeAside = document.querySelectorAll(".close-aside");
 const aside = document.querySelector('.aside');
 const asideLinks = document.querySelectorAll('.aside-links');
 
 function sideNav() {
 
-    openAside.addEventListener('click', function () {
-        aside.classList.add("show-aside");
-    });
+    for (x = 0; x < openAside.length; x++) {
+        openAside[x].addEventListener('click', function () {
+           aside.classList.add("show-aside");
+        });
+    }
 
-    closeAside.addEventListener('click', function () {
-        aside.classList.remove("show-aside");
-    });
+    for (c = 0; c < closeAside.length; c++) {
+        closeAside[c].addEventListener('click', function () {
+           aside.classList.remove("show-aside");
+        });
 
     for (let y = 0; y < asideLinks.length; y++) {
         asideLinks[y].addEventListener('click', function () {
