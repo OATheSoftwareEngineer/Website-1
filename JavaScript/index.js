@@ -183,5 +183,3 @@ const handleScrollAnimation1 = () => {
 window.addEventListener('scroll', () => {
   handleScrollAnimation1();
 });
-
-
