@@ -161,6 +161,7 @@ header {
         opacity: 0;
         filter: blur(4px);
         transform: translateX(100%);
+        will-change: transform;
     }
 
   100% {
@@ -314,10 +315,11 @@ header {
 
 .js-scroll1 {
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   filter: blur(4px);
   transform: translateY(150%);
   padding-top: 80px;
+  will-change: transform;
 }
 
 .js-scroll1.scrolled1 {
@@ -348,8 +350,7 @@ header {
 .services-sec h1 {
   text-align: center;
   margin-bottom: 1em;
-  font-size: 19px;
-  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .services {
@@ -635,7 +636,7 @@ header {
 /* CONTACT SECTION */
 
 #footer {
-  padding-top: 80px;
+  padding-top: 1px;
 }
 
 footer {
@@ -1003,7 +1004,7 @@ footer .copyright {
   }
 
   .services-sec h1 {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .services {
@@ -1317,6 +1318,7 @@ footer .copyright {
 @media (min-width: 992px) {
   .top-header {
     padding: 20px 60px;
+    height: 70px;
   }
 
   .top-header .icon {
@@ -1329,7 +1331,7 @@ footer .copyright {
     font-size: 20px;
   }
 
-  .top-header .fa-bars {
+  .top-header .fa-bars-staggered {
     display: none;
   }
 
@@ -1451,7 +1453,7 @@ footer .copyright {
   }
 
   .services-sec h1 {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .services {
@@ -1558,6 +1560,10 @@ footer .copyright {
 
   .swiper-button-prev {
     margin-left: -0.65rem;
+  }
+  
+  #footer {
+    padding-top: 0px;
   }
 
   footer {
